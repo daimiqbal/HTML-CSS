@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html>
+<html lang="en"></html>
+<head>
+    <title>Header Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;            
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-gap: 20px;
+            padding: 20px;
+            background-color: yellow;
+        }
+        
+        
+        .section:nth-child(3) {
+            background-color: rgb(0, 0, 0);
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #000000;
+            padding: 20px;
+        }
+        .logo img {
+            height: 60px; 
+        }
+
+        .nav-bar {
+            margin-right: 20px;
+        }
+
+        .nav-bar a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+        }
+
+        .header-button {
+            padding: 10px 20px;
+            background-color: #ff0000;
+            color: rgb(0, 0, 0);
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .footer {
+            background-color: #000000;
+            color: #ffffff;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            font-size: 14px;
+        }
+
+        .footer p {
+            margin: 0;
+        }
+        .section {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(600px, 1fr));
+            align-items: center;
+            justify-content: space-around;
+        }
+
+       
+        .section {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(600px, 1fr));
+    align-items: center;
+    justify-content: space-around;
+    border-radius:20px;
+    padding: 20px 40px 20px 40px;
+    border: 2px solid rgb(255, 0, 0); 
+}
+
+        section:nth-child(odd) {
+            direction: ltr;
+            background-color: grey;
+        }
+
+        .section:nth-child(even) {
+            direction: ltr;
+        }
+
+        .section-images {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+            .image-box, .image-round {
+            display: grid;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+
+        .image-box img, .image-round img {
+            width: 80%;
+            object-fit: cover;
+            /* background-color: grey; */
+        }
+
+    
+        .imground
+        {
+        height:200px;
+        width:100%;
+        border-radius: 50%;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        }
+
+        .section:nth-child(even) {
+            flex-direction: row-reverse;
+        }
+
+        .section-images {
+            display: grid;
+            justify-content: space-between;
+            
+        }
+
+    </style>
+</head>
+<body>
+    
+    <header class="header">
+        <div class="logo">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCGLpkt5VvfceHUSe2JnwIPP4GUQtG8Bz6AZa8D19l7g&s" alt="Logo">
+        </div>
+        <nav class="nav-bar">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </nav>
+        <button class="header-button">Click Me</button>
+    </header>
+    
+    <section class="section">
+        <div class="image-box">
+            <img src="https://images.wallpaperscraft.com/image/single/audi_r8_chrome_97060_300x300.jpg" alt="Box Image">
+        </div>
+        <div>
+            <h1>Technological Advancements in Sports Cars</h1>
+            <p>Technological innovations play a crucial role in enhancing sports car performance and safety. From eco-friendly hybrid engines to advanced aerodynamics and driver-assistance systems, sports cars are pushing the boundaries of automotive evolution, balancing speed with sustainability..</p>
+        </div>
+    </section>
+    <section class="section">
+        <div>
+            <divbackground-color: grey;>
+            <h1>The Thrill of Sports Cars</h1>
+            <p>Sports cars, epitomizing the zenith of driving enjoyment, blend speed, agility, and stunning design. These vehicles from renowned manufacturers like Ferrari and Porsche deliver an invigorating driving experience and stand as extraordinary feats of engineering.</p>
+        </div>
+        <div class="image-round">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5UMX2coOP_FRNl5CEnEYv7KZq9zxZpibP5xKU2fpqN1aMVIIcQt4pRXGnGatCUyKaAOk&usqp=CAU" alt="Round Image" class ="imground">
+        </div>
+    </section>
+
+
+    <section class="section section-images">
+        <div class="image-box">
+            <img src="https://images.wallpaperscraft.com/image/single/sports_car_drift_race_131217_300x300.jpg" alt="Box Image">
+        </div>
+        <div class="image-box">
+            <img src="https://i.etsystatic.com/40485572/r/il/580a81/4596995581/il_300x300.4596995581_41gq.jpg" alt="Box Image">
+        </div>
+        <div class="image-box">
+            <img src="https://www.wsupercars.com/wp-content/uploads/2024-Porsche-718-Spyder-RS-001.jpg" alt="Box Image">
+        </div>
+    </section>
+    
+    
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Header Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;            
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-gap: 20px;
+            padding: 20px;
+            background-color: yellow;
+        }
+        #main-box {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+        }
+
+        #leftbox {
+            flex: 1;
+            margin-right: 10px;
+            height: 300px;
+        }
+        #middlebox{
+            flex: 2;
+            margin-right: 10px;
+            align-items: center;
+            height: 300px;
+        }
+        #rightbox{
+            flex: 1;
+            height: 300px;
+        }
+    </style>
+</head>
+<body>
+    <div id = "main-box">
+        <div id = "leftbox">
+            <h2>Unordered List</h2>
+            <ul>
+                <li>Chocolate Cake
+                    <ul>
+                        <li>Chocolate Velvet Cake</li>
+                        <li>Chocolate Lava Cake</li>
+                    </ul>
+                </li>
+                <li>Black Forest Cake</li>
+                <li>Pineapple Cake</li>
+            </ul>
+        </div>
+        
+        <div id = "middlebox">
+            <h2>Ordered</h2>
+            <ol>
+                <li>Fasten your seatbelt</li>
+                <li>Starts the car's engine</li>
+                <li>Look around and go
+                    <ol>
+                        <li>Check the blind spot</li>
+                        <li>Check surrounding for safety</li>
+                    </ol>
+                </li>
+            </ol>
+        </div>
+        
+        <div id = "rightbox">
+            <h2>Form</h2>
+            <form action="/action_page.php">
+                <label for="fname">First name:</label><br>
+                <input type="text" id="fname" name="fname" value="Daim"><br>
+                <label for="lname">Last name:</label><br>
+                <input type="text" id="lname" name="lname" value="Iqbal"><br><br>
+                <input type="submit" value="Submit">
+            </form> 
+        </div>
+    </div>
+</div>
+<!-- </body>
+</html>				 -->
+
+    <footer class="footer">
+        <p>2023 Upgenics</p>
+    </footer>
+
+
+        <!-- .footer p {
+            margin: 0;
+        } -->
+   
+
+
