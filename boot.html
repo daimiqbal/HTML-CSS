@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Header Example</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    
+
+    <style>
+        body , html{
+overflow-x: hidden;
+        }
+        body {
+            font-family: Arial, sans-serif;            
+            background-color: yellow;
+        }
+
+        .header {
+            padding: 20px;
+            background-color: #000000;
+        }
+
+        .nav-bar .nav-link {
+            color: rgb(255, 255, 255);
+        }
+
+        .header-button {
+            padding: 10px 20px;
+            background-color: #ff0000;
+            color: rgb(0, 0, 0);
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .footer {
+            background-color: #000000;
+            color: #ffffff;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            font-size: 14px;
+        }
+
+        .footer p {
+            margin: 0;
+        }
+
+        .imground {
+            height:200px;
+            width:100%;
+            border-radius: 50%;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+
+        .image-box img, .image-round img {
+            width: 80%;
+            object-fit: cover;
+        }
+
+        @media (min-width: 600px) {
+            .section {
+                display: grid;
+                grid-template-columns: repeat(auto-fill, minmax(600px, 1fr));
+                align-items: center;
+                justify-content: space-around;
+                background-color: grey;
+                border-radius:20px;
+                padding: 20px 40px 20px 40px;
+                border: 2px solid rgb(255, 0, 0); 
+                display: grid;
+            }
+        }
+    </style>
+</head>
+
+<body class="container py-3">
+    <header class="header d-flex justify-content-between align-items-center">
+        <div class="logo">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCGLpkt5VvfceHUSe2JnwIPP4GUQtG8Bz6AZa8D19l7g&s" alt="Logo" class="img-fluid" style="height: 60px;">
+        </div>
+        <nav class="nav-bar">
+            <a href="#" class="nav-link">Home</a>
+            <a href="#" class="nav-link">About</a>
+            <a href="#" class="nav-link">Contact</a>
+        </nav>
+        <!-- <nav class="nav-bar">
+            <li class="nav-item"></li>
+        <li class="nav-item">
+            <a class="Home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="About">About</a>
+          </li>
+          <li> class="nav-item">
+            <a class="Contact">Contact</a>
+          </li>
+        </ul>
+      </nav> -->
+        <button class="header-button">Click Me</button>
+    </header>
+    
+    <section class="section d-md-flex justify-content-between align-items-center my-3 bg-light rounded p-4 border border-danger">
+        <div class="image-box">
+            <img src="https://images.wallpaperscraft.com/image/single/audi_r8_chrome_97060_300x300.jpg" alt="Box Image" class="img-fluid">
+        </div>
+        <div>
+            <h1>Technological Advancements in Sports Cars</h1>
+            <p>Technological innovations play a crucial role in enhancing sports car performance and safety. From eco-friendly hybrid engines to advanced aerodynamics and driver-assistance systems, sports cars are pushing the boundaries of automotive evolution, balancing speed with sustainability..</p>
+        </div>
+    </section>
+    <section class="section d-md-flex justify-content-between align-items-center my-3 bg-light rounded p-4 border border-danger">
+        <div>
+            <h1>The Thrill of Sports Cars</h1>
+            <p>Sports cars, epitomizing the zenith of driving enjoyment, blend speed, agility, and stunning design. These vehicles from renowned manufacturers like Ferrari and Porsche deliver an invigorating driving experience and stand as extraordinary feats of engineering.</p>
+        </div>
+        <div class="image-round">
+            <!-- <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5UMX2coOP_FRNl5CEnEYv7KZq9zxZpibP5xKU2fpqN1aMVIIcQt4pRXGnGatCUyKaAOk&usqp=CAU" alt="Round Image" class ="imground img-fluid"  width="600" height="236"> -->
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5UMX2coOP_FRNl5CEnEYv7KZq9zxZpibP5xKU2fpqN1aMVIIcQt4pRXGnGatCUyKaAOk&usqp=CAU" class="rounded-circle" alt="Cinque Terre" width="304" height="236"> 
+        </div>
+        <!-- <p class="text-bg-secondary">Secondary background color.</p> -->
+    </section>
+    <section class="section d-flex flex-wrap justify-content-between align-items-center my-3 bg-light rounded p-4 border border-danger">
+        <div class="image-box">
+            <img src="https://images.wallpaperscraft.com/image/single/sports_car_drift_race_131217_300x300.jpg" alt="Box Image" class="img-fluid">
+        </div>
+        <div class="image-box">
+            <img src="https://i.etsystatic.com/40485572/r/il/580a81/4596995581/il_300x300.4596995581_41gq.jpg" alt="Box Image" class="img-fluid">
+        </div>
+        <div class="image-box">
+            <img src="https://www.wsupercars.com/wp-content/uploads/2024-Porsche-718-Spyder-RS-001.jpg" alt="Box Image" class="img-fluid">
+        </div>
+    </section>
+
+    <div id = "main-box" class="d-flex flex-column flex-md-row justify-content-between my-3 p-4 bg-light rounded border border-danger">
+        <div id = "leftbox" class="mb-3 mb-md-0 mr-md-3">
+            <h2>Unordered List</h2>
+            <ul>
+                <li>Chocolate Cake 
+                    <ul>
+                        <li>Chocolate Velvet Cake</li>
+                        <li>Chocolate Lava Cake</li>
+                    </ul>
+                </li>
+                <li>Black Forest Cake</li>
+                <li>Pineapple Cake</li>
+            </ul>
+        </div>
+        
+        <div id = "middlebox" class="mb-3 mb-md-0 mr-md-3">
+            <h2>Ordered</h2>
+            <ol>
+                <li>Fasten your seatbelt</li>
+                <li>Starts the car's engine</li>
+                <li>Look around and go
+                    <ol>
+                        <li>Check the blind spot</li>
+                        <li>Check surrounding for safety</li>
+                    </ol>
+                </li>
+            </ol>
+        </div>
+        
+        <div id = "rightbox">
+            <h2>Form</h2>
+            <form action="/action_page.php">
+                <label for="fname">First name:</label><br>
+                <input type="text" id="fname" name="fname" value="Daim"><br>
+                <label for="lname">Last name:</label><br>
+                <input type="text" id="lname" name="lname" value="Iqbal"><br><br>
+                <input type="submit" value="Submit">
+            </form> 
+        </div>
+                
+                <footer class="footer">
+                    <p>2023 Upgenics</p>
+                </footer>
+            
+            
